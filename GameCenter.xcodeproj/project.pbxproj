@@ -12,6 +12,7 @@
 		D96BFC481FD3AB96009E31C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96BFC461FD3AB96009E31C4 /* Main.storyboard */; };
 		D96BFC4A1FD3AB96009E31C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D96BFC491FD3AB96009E31C4 /* Assets.xcassets */; };
 		D96BFC4D1FD3AB96009E31C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D96BFC4B1FD3AB96009E31C4 /* LaunchScreen.storyboard */; };
+		D9A05BCF1FD3B75400791A2E /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9A05BCE1FD3B75400791A2E /* GameKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D96BFC491FD3AB96009E31C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D96BFC4C1FD3AB96009E31C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D96BFC4E1FD3AB96009E31C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9A05BCE1FD3B75400791A2E /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A05BCF1FD3B75400791A2E /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				D96BFC411FD3AB96009E31C4 /* GameCenter */,
 				D96BFC401FD3AB96009E31C4 /* Products */,
+				D9A05BC91FD3B42B00791A2E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				D96BFC4E1FD3AB96009E31C4 /* Info.plist */,
 			);
 			path = GameCenter;
+			sourceTree = "<group>";
+		};
+		D9A05BC91FD3B42B00791A2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9A05BCE1FD3B75400791A2E /* GameKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +109,11 @@
 					D96BFC3E1FD3AB96009E31C4 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
